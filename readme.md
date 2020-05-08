@@ -39,4 +39,7 @@ farm.addTaskType(
 
 // pass a buffer to the task
 farm.delegate(TaskType.Example, Buffer.from([...data]));
+
+// call setTimeout every 0 ms and tick the current thread (master and worker)
+farm.autoTick();
 ```
