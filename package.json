@@ -1,0 +1,23 @@
+{
+  "name": "task-farm",
+  "version": "0.0.1",
+  "description": "A task farm library that uses SharedArrayBuffer",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "run-s rimraf:lib tsc",
+    "rimraf:lib": "rimraf lib",
+    "tsc": "tsc",
+    "test": "jest"
+  },
+  "author": "Joshua Tenner",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.0-beta"
+  },
+  "dependencies": {
+    "tinyqueue": "^2.0.3"
+  }
+}
